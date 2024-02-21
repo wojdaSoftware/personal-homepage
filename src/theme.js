@@ -1,4 +1,6 @@
 export const theme = {
   breakpoint: 767,
-  color: {},
+  color: {
+    whiteLilac: "#FBFBFE",
+  },
 }
