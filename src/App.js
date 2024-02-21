@@ -1,6 +1,11 @@
+import Header from "./components/Header";
+import ThemeButton from "./components/ThemeButton";
+
 function App() {
   return (
-    <div>asas</div>
+    <>
+      <Header extraHeaderContent={<ThemeButton />} />
+    </>
   );
 }
 
