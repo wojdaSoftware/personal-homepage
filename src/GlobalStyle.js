@@ -2,6 +2,10 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
   }
 
   *,
@@ -11,6 +15,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({theme}) => theme.color.whiteLilac};
+    background-color: ${({ theme }) => theme.color.whiteLilac};
   }
 `;
