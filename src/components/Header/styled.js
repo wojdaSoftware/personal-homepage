@@ -32,3 +32,50 @@ export const StyledPreTitle = styled.em`
   margin-top: 38px;
   flex-basis: 100%;
 `;
+
+export const StyledDescription = styled.p`
+  margin-top: 35px;
+  margin-bottom: 0;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 20px;
+  color: ${({ theme }) => theme.color.slateGray};
+`;
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 16px;
+`;
+
+export const HireMeButton = styled.a`
+  display: inline-block;
+  text-decoration: none;
+  background-color: ${({ theme }) => theme.color.scienceBlue};
+  border-radius: 4px;
+  border: 1px solid ${({ theme }) => theme.color.iron};
+  padding: 12px 16px;
+  margin-top: 32px;
+
+  &:hover, &:focus {
+    box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.color.anakiwa};
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.color.parsley} inset;
+  }
+`;
+
+export const HireMeButtonIcon = styled.img`
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+`;
+
+export const HireMeButtonText = styled.strong`
+  color: ${({ theme }) => theme.color.white};
+  font-weight: 600;
+  size: 20px;
+  line-height: 24px;
+`;
