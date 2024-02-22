@@ -16,6 +16,6 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${({ theme }) => theme.color.whiteLilac};
-    padding: 0 24px;
+    padding: 0 14px;
   }
 `;
