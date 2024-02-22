@@ -1,13 +1,14 @@
 import { StyledArticle, StyledList, StyledListItem, StyledTitle } from "./styled";
 
-const SkillsetList = ({title, skills}) => (
+const SkillsetList = ({ title, skills }) => (
   <StyledArticle>
     <StyledTitle>{title}</StyledTitle>
     <StyledList>
-      <StyledListItem>Lorem Ipsum</StyledListItem>
-      <StyledListItem>Lorem Ipsum</StyledListItem>
-      <StyledListItem>Lorem Ipsum</StyledListItem>
-      <StyledListItem>Lorem Ipsum</StyledListItem>
+      {skills && skills.map((skills, index) => (
+        <StyledListItem key={index}>
+          {skills}
+        </StyledListItem>
+      ))}
     </StyledList>
   </StyledArticle>
 );
