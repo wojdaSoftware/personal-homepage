@@ -1,10 +1,29 @@
 {
   "currentSkills": [
-    "Lorem",
-    "Ipsum"
+    "HTML: Semantics & accessibility",
+    "Responsive Web Design",
+    "JavaScript: ES6+",
+    "CSS BEM convention",
+    "Promises, Async/await",
+    "Immutability",
+    "CSS Grid & Flexbox",
+    "React",
+    "React Hooks",
+    "React Router",
+    "Redux (Toolkit)",
+    "Redux-Saga",
+    "Working with API (fetch, axios)",
+    "Error handling",
+    "Git",
+    "NPM",
+    "Scrum",
+    "Trello"
   ],
   "futureSkills": [
-    "Lorem",
-    "Ipsum"
+    "TypeScript",
+    "JS Classes",
+    "Unit testing",
+    "React Native",
+    "Node.js"
   ]
 }
