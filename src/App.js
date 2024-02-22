@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
 import SectionHeader from "./components/SectionHeader";
@@ -21,6 +22,7 @@ function App() {
       />
       <SectionHeader />
       <ProjectList />
+      <Footer />
     </>
   );
 }

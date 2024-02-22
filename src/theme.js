@@ -4,6 +4,7 @@ export const theme = {
     whiteLilac: "#FBFBFE",
     slateGray: "#6E7E91",
     white: "#FFFFFF",
+    black: "#252525",
     scienceBlue: "#0366D6",
     scienceBlueTransparent: "rgba(3, 102, 214, 0.2)",
     iron: "rgba(209, 213, 218, 0.3)",
