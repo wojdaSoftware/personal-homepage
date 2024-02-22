@@ -11,6 +11,7 @@ export const StyledArticle = styled.article`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
    margin-top: 48px;
+   padding: 16px;
   }
 `;
 
@@ -19,6 +20,10 @@ export const StyledTitle = styled.h2`
   size: 30px;
   margin: 0;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   font-size: 18px;
+  }
 `;
 
 export const StyledList = styled.ul`
@@ -37,6 +42,8 @@ export const StyledList = styled.ul`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
+    font-size: 14px;
+    padding-top: 12px;
   }
 `;
 
