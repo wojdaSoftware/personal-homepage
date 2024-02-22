@@ -6,7 +6,7 @@ export const StyledThemeButtonText = styled.span`
   font-weight: 700;
   margin-right: 12px;
 
-  @media (max-width: ${({theme})=>theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     display: none;
   }
 `;
@@ -21,4 +21,8 @@ export const ThemeButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    align-items: start;
+  }
 `;
