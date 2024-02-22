@@ -28,6 +28,10 @@ export const StyledListItem = styled.li`
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.scienceBlueTransparent};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   padding: 24px;
+  }
 `;
 
 export const StyledProjectTitle = styled.h3`
@@ -35,11 +39,20 @@ export const StyledProjectTitle = styled.h3`
   font-weight: 700;
   font-size: 24px;
   margin: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   font-size: 16px;
+  }
 `;
 
 export const StyledProjectDescription = styled.p`
   color: ${({ theme }) => theme.color.slateGray};
   line-height: 25.2px;
-  size: 18px;
+  font-size: 18px;
   margin: 24px 0 0 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   margin-top: 16px;
+   font-size: 14px;
+  }
 `;
