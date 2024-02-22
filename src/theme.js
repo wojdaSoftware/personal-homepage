@@ -1,5 +1,8 @@
 export const theme = {
-  breakpoint: 767,
+  breakpoint: {
+    mobile: 767,
+    tablet: 1250,
+  },
   color: {
     whiteLilac: "#FBFBFE",
     slateGray: "#6E7E91",

@@ -1,4 +1,4 @@
-import { StyledCaption, StyledContainer, StyledFooter, StyledGridContainer, StyledLink, StyledParagraph, } from "./styled";
+import { StyledCaption, StyledContainer, StyledFooter, StyledGridContainer, StyledLink, StyledParagraph, StyledGithubIcon, StyledLinkedInIcon } from "./styled";
 
 const Footer = () => (
   <StyledFooter>
@@ -14,8 +14,12 @@ const Footer = () => (
         If you have a website, dashboard or a mobile app in mind and need help making your ideas come to life, feel free to contact me!
       </StyledParagraph>
       <StyledGridContainer>
-        <button>Lorem ipsum</button>
-        <button>Lorem ipsum</button>
+        <a href="https://github.com/wojdaSoftware" rel="noopener">
+          <StyledGithubIcon />
+        </a>
+        <a href="https://www.linkedin.com/in/kacper-wojda-9a7a62299/" rel="noopener">
+          <StyledLinkedInIcon />
+        </a>
       </StyledGridContainer>
     </StyledContainer>
   </StyledFooter>
