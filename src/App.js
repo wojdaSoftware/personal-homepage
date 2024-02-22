@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import ProjectList from "./components/ProjectList";
 import SectionHeader from "./components/SectionHeader";
 import SkillsetList from "./components/SkillsetList";
 import ThemeButton from "./components/ThemeButton";
@@ -19,6 +20,7 @@ function App() {
         skills={skills.futureSkills}
       />
       <SectionHeader />
+      <ProjectList />
     </>
   );
 }
