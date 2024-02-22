@@ -14,8 +14,8 @@ import { ReactComponent as MailIcon } from '../../images/mail-icon.svg';
 const Header = ({ extraHeaderContent }) => (
   <StyledHeader>
     <StyledImage src={myself} alt="Portrait photo of me." />
+    {extraHeaderContent}
     <div>
-      {extraHeaderContent}
       <StyledPreTitle>THIS IS</StyledPreTitle>
       <StyledTitle>Kacper Wojda</StyledTitle>
       <StyledDescription>
@@ -24,7 +24,7 @@ const Header = ({ extraHeaderContent }) => (
       </StyledDescription>
       <HireMeButton href="mailto: kacper.a.wojda@gmail.com">
         <GridContainer>
-            <MailIcon />
+          <MailIcon />
           <HireMeButtonText>Hire Me</HireMeButtonText>
         </GridContainer>
       </HireMeButton>

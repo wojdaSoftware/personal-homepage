@@ -6,6 +6,7 @@ export const StyledHeader = styled.header`
   margin-top: 119px;
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
   grid-column-gap: 72px;
 `;
 
@@ -14,6 +15,13 @@ export const StyledImage = styled.img`
   width: 398px;
   height: 398px;
   display: inline-block;
+  grid-area: 1 / 1 / last-line /1;
+
+  @media (max-width: ${({theme})=>theme.breakpoint.mobile}px) {
+    grid-area: 1 / 1 / 1 /1;
+    width: 128px;
+    height: 128px;
+  }
 `;
 
 export const StyledTitle = styled.h1`

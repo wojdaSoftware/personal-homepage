@@ -5,6 +5,10 @@ export const StyledThemeButtonText = styled.span`
   font-size: 12px;
   font-weight: 700;
   margin-right: 12px;
+
+  @media (max-width: ${({theme})=>theme.breakpoint.mobile}px) {
+    display: none;
+  }
 `;
 
 export const StyledThemeButton = styled.button`
