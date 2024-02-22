@@ -1,6 +1,6 @@
 # Personal homepage
 
-Add, remove, and mark finished or unfinished tasks.
+This page showcases all my recent projects (currently unimplemented) and skills - ones that I've acquired, and ones which I'm exctited to learn.
 
 Check the site [**here**](https://wojdaSoftware.github.io/personal-homepage/).
 
