@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import SectionHeader from "./components/SectionHeader";
 import SkillsetList from "./components/SkillsetList";
 import ThemeButton from "./components/ThemeButton";
 import useSkills from "./useSkills";
@@ -17,6 +18,7 @@ function App() {
         title={"What I want to learn next 🚀"}
         skills={skills.futureSkills}
       />
+      <SectionHeader />
     </>
   );
 }
