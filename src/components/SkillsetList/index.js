@@ -5,6 +5,9 @@ const SkillsetList = ({title, skills}) => (
     <StyledTitle>{title}</StyledTitle>
     <StyledList>
       <StyledListItem>Lorem Ipsum</StyledListItem>
+      <StyledListItem>Lorem Ipsum</StyledListItem>
+      <StyledListItem>Lorem Ipsum</StyledListItem>
+      <StyledListItem>Lorem Ipsum</StyledListItem>
     </StyledList>
   </StyledArticle>
 );

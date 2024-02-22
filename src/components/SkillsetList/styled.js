@@ -18,13 +18,23 @@ export const StyledTitle = styled.h2`
 
 export const StyledList = styled.ul`
   list-style: none;
+  border-top: 1px solid ${({ theme }) => theme.color.iron};
+  padding: 32px 0 0 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 18px;
+  gap: 8px 115px;
 `;
 
 export const StyledListItem = styled.li`
   &:before {
     content: "•";
     color: ${({ theme }) => theme.color.scienceBlue};
+    padding-right: 16px;
   }
 
   color: ${({ theme }) => theme.color.slateGray};
+  
+  
 `;
