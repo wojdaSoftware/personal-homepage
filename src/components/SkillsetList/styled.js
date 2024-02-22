@@ -8,6 +8,10 @@ export const StyledArticle = styled.article`
   padding: 32px;
   margin: auto;
   margin-top: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   margin-top: 48px;
+  }
 `;
 
 export const StyledTitle = styled.h2`
@@ -27,11 +31,11 @@ export const StyledList = styled.ul`
   font-size: 18px;
   gap: 8px 115px;
 
-  @media (max-width: ${({theme})=>theme.breakpoint.tablet}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: ${({theme})=>theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
   }
 `;
