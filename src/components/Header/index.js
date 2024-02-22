@@ -1,5 +1,6 @@
 import {
   GridContainer,
+  GridItem,
   HireMeButton,
   HireMeButtonText,
   StyledDescription,
@@ -15,7 +16,7 @@ const Header = ({ extraHeaderContent }) => (
   <StyledHeader>
     <StyledImage src={myself} alt="Portrait photo of me." />
     {extraHeaderContent}
-    <div>
+    <GridItem>
       <StyledPreTitle>THIS IS</StyledPreTitle>
       <StyledTitle>Kacper Wojda</StyledTitle>
       <StyledDescription>
@@ -28,7 +29,7 @@ const Header = ({ extraHeaderContent }) => (
           <HireMeButtonText>Hire Me</HireMeButtonText>
         </GridContainer>
       </HireMeButton>
-    </div>
+    </GridItem>
   </StyledHeader>
 );
 

@@ -8,6 +8,10 @@ export const StyledHeader = styled.header`
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
   grid-column-gap: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   margin-top: 21px;
+  }
 `;
 
 export const StyledImage = styled.img`
@@ -15,12 +19,13 @@ export const StyledImage = styled.img`
   width: 398px;
   height: 398px;
   display: inline-block;
-  grid-area: 1 / 1 / last-line /1;
+  grid-area: 1 / 1 / span 2 / 1;
 
-  @media (max-width: ${({theme})=>theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-area: 1 / 1 / 1 /1;
     width: 128px;
     height: 128px;
+    margin-top: 13px;
   }
 `;
 
@@ -30,6 +35,11 @@ export const StyledTitle = styled.h1`
   margin-top: 12px;
   flex-basis: 100%;
   color: ${({ theme }) => theme.color.black};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   font-size : 22px;
+   margin-top: 8px;
+  }
 `;
 
 export const StyledPreTitle = styled.em`
@@ -40,6 +50,10 @@ export const StyledPreTitle = styled.em`
   font-style: normal;
   margin-top: 38px;
   flex-basis: 100%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   margin-top : 16px;
+  }
 `;
 
 export const StyledDescription = styled.p`
@@ -49,6 +63,11 @@ export const StyledDescription = styled.p`
   font-weight: 400;
   font-size: 20px;
   color: ${({ theme }) => theme.color.slateGray};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 17px;
+    margin-top: 16px;
+  }
 `;
 
 export const GridContainer = styled.div`
@@ -74,11 +93,25 @@ export const HireMeButton = styled.a`
   &:active {
     box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.color.parsley} inset;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   margin-top: 24px;
+  }
 `;
 
 export const HireMeButtonText = styled.strong`
   color: ${({ theme }) => theme.color.white};
   font-weight: 600;
-  size: 20px;
+  font-size: 20px;
   line-height: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+  }
+`;
+
+export const GridItem = styled.div`
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    grid-column: 1 / span 2;
+  }
 `;
