@@ -12,6 +12,7 @@ export const StyledTitle = styled.h2`
   font-weight: 900;
   margin-top: 12px;
   margin-bottom: 0;
+  color: ${({ theme }) => theme.color.black};
 `;
 
 export const StyledSubtitle = styled.h3`
@@ -19,4 +20,5 @@ export const StyledSubtitle = styled.h3`
   margin-bottom: 0;
   font-weight: 400;
   font-size: 20px;
+  color: ${({ theme }) => theme.color.black};
 `;

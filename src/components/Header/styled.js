@@ -21,6 +21,7 @@ export const StyledTitle = styled.h1`
   font-size: 38px;
   margin-top: 12px;
   flex-basis: 100%;
+  color: ${({ theme }) => theme.color.black};
 `;
 
 export const StyledPreTitle = styled.em`

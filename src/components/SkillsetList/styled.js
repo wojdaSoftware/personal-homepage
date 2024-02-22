@@ -14,6 +14,7 @@ export const StyledTitle = styled.h2`
   font-weight: 900;
   size: 30px;
   margin: 0;
+  color: ${({ theme }) => theme.color.black};
 `;
 
 export const StyledList = styled.ul`
