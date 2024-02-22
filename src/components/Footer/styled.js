@@ -46,6 +46,7 @@ export const StyledLink = styled.a`
   font-size: 32px;
   text-decoration: none;
   transition-duration: 250ms;
+  letter-spacing: 1px;
   color: ${({ theme }) => theme.color.black};
 
   &:visited {
@@ -66,6 +67,7 @@ export const StyledParagraph = styled.p`
   font-size: 18px;
   margin: 24px 0 0 0;
   color: ${({ theme }) => theme.color.black};
+  letter-spacing: 1px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 14px;

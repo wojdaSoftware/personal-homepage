@@ -34,6 +34,7 @@ export const StyledTitle = styled.h1`
   font-size: 38px;
   margin-top: 12px;
   flex-basis: 100%;
+  letter-spacing: 1px;
   color: ${({ theme }) => theme.color.black};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -62,6 +63,7 @@ export const StyledDescription = styled.p`
   line-height: 28px;
   font-weight: 400;
   font-size: 20px;
+  letter-spacing: 1px;
   color: ${({ theme }) => theme.color.slateGray};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -84,6 +86,7 @@ export const HireMeButton = styled.a`
   border: 1px solid ${({ theme }) => theme.color.iron};
   padding: 12px 16px;
   margin-top: 32px;
+  letter-spacing: 1px;
 
   &:hover, &:focus {
     box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.color.anakiwa};

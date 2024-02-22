@@ -19,6 +19,7 @@ export const StyledTitle = styled.h2`
   font-weight: 900;
   size: 30px;
   margin: 0;
+  letter-spacing: 1px;
   color: ${({ theme }) => theme.color.black};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {

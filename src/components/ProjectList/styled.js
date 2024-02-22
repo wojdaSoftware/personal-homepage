@@ -20,6 +20,7 @@ export const StyledListItem = styled.li`
   padding: 56px;
   background-color: ${({ theme }) => theme.color.white};
   border: 6px solid ${({ theme }) => theme.color.iron};
+  letter-spacing: 1px;
   box-shadow: 
     0px 16px 58px 0px ${({ theme }) => theme.color.violet},
     0px -2px 50px 0px ${({ theme }) => theme.color.violet};
