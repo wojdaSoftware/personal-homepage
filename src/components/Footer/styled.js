@@ -18,6 +18,10 @@ const svgLinkStyle = () => {
 export const StyledFooter = styled.footer`
   max-width: 1216px;
   margin: 120px auto 109px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   margin-top: 48px;
+  }
 `;
 
 export const StyledCaption = styled.strong`

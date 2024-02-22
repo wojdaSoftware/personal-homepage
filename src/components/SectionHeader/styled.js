@@ -5,6 +5,10 @@ export const StyledHeader = styled.header`
   max-width: 1216px;
   margin: auto;
   margin-top: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+   margin-top: 48px;
+  }
 `;
 
 export const StyledTitle = styled.h2`
