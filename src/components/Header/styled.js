@@ -67,12 +67,6 @@ export const HireMeButton = styled.a`
   }
 `;
 
-export const HireMeButtonIcon = styled.img`
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-`;
-
 export const HireMeButtonText = styled.strong`
   color: ${({ theme }) => theme.color.white};
   font-weight: 600;

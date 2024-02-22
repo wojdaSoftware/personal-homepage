@@ -1,7 +1,6 @@
 import {
   GridContainer,
   HireMeButton,
-  HireMeButtonIcon,
   HireMeButtonText,
   StyledDescription,
   StyledHeader,
@@ -10,7 +9,7 @@ import {
   StyledTitle,
 } from "./styled";
 import myself from '../../images/myself.JPG';
-import mailIcon from '../../images/mail-icon.png';
+import { ReactComponent as MailIcon } from '../../images/mail-icon.svg';
 
 const Header = ({ extraHeaderContent }) => (
   <StyledHeader>
@@ -25,7 +24,7 @@ const Header = ({ extraHeaderContent }) => (
       </StyledDescription>
       <HireMeButton href="mailto: kacper.a.wojda@gmail.com">
         <GridContainer>
-          <HireMeButtonIcon src={mailIcon} alt="A letter symbol" />
+            <MailIcon />
           <HireMeButtonText>Hire Me</HireMeButtonText>
         </GridContainer>
       </HireMeButton>
