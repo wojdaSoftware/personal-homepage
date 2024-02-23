@@ -1,9 +1,9 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import ProjectList from "./components/ProjectList";
+import ProjectList from "./components/features/ProjectList/ProjectList.js";
 import SectionHeader from "./components/SectionHeader";
 import SkillsetList from "./components/SkillsetList";
-import ThemeButton from "./components/ThemeButton";
+import ThemeButton from "./components/features/ThemeButton/ThemeButton.js";
 import useSkills from "./useSkills";
 
 function App() {
