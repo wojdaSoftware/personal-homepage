@@ -12,6 +12,7 @@ export const theme = {
     scienceBlue: "#0366D6",
     scienceBlueTransparent: "rgba(3, 102, 214, 0.2)",
     ironTransparent: "rgba(209, 213, 218, 0.3)",
+    iron: "rgba(209, 213, 218, 1)",
     parsley: "rgba(20, 70, 32, 0.2)",
     anakiwa: "#8CC2FF",
     violet: "rgba(9, 10, 51, 0.03)",
