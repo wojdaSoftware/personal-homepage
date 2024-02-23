@@ -5,15 +5,15 @@ import { selectTheme, toggleTheme } from "./themeButtonSlice";
 
 const ThemeButton = () => {
   const dispatch = useDispatch();
-  const darkTheme = useSelector(selectTheme);
+  const $darkTheme = useSelector(selectTheme);
 
   return (
     <ThemeButtonContainer>
       <StyledThemeButtonText>
-        DARK MODE {darkTheme ? "ON" : "OFF"}
+        DARK MODE {$darkTheme ? "ON" : "OFF"}
       </StyledThemeButtonText>
       <StyledThemeButton onClick={() => dispatch(toggleTheme())} >
-        <StyledIconContainer darkTheme={darkTheme}>
+        <StyledIconContainer $darkTheme={$darkTheme}>
           <StyledSunIcon />
         </StyledIconContainer>
       </StyledThemeButton>
