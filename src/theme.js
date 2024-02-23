@@ -7,6 +7,7 @@ export const theme = {
     whiteLilac: "#FBFBFE",
     slateGray: "#6E7E91",
     white: "#FFFFFF",
+    mercury: "#E5E5E5",
     black: "#252525",
     scienceBlue: "#0366D6",
     scienceBlueTransparent: "rgba(3, 102, 214, 0.2)",

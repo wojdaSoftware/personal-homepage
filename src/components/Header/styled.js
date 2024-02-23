@@ -83,7 +83,7 @@ export const HireMeButton = styled.a`
   text-decoration: none;
   background-color: ${({ theme }) => theme.color.scienceBlue};
   border-radius: 4px;
-  border: 1px solid ${({ theme }) => theme.color.iron};
+  border: 1px solid ${({ theme }) => theme.color.ironTransparent};
   padding: 12px 16px;
   margin-top: 32px;
   letter-spacing: 1px;

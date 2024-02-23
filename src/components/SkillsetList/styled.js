@@ -29,7 +29,7 @@ export const StyledTitle = styled.h2`
 
 export const StyledList = styled.ul`
   list-style: none;
-  border-top: 1px solid ${({ theme }) => theme.color.iron};
+  border-top: 1px solid ${({ theme }) => theme.color.ironTransparent};
   padding: 32px 0 0 0;
   margin-bottom: 0;
   display: grid;

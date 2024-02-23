@@ -15,6 +15,8 @@ export const StyledThemeButton = styled.button`
   display: inline-block;
   width: 48px;
   height: 26px;
+  border: 1px solid ${({theme}) => theme.color.ironTransparent};
+  background-color: ${({theme}) => theme.color.mercury};
 `;
 
 export const ThemeButtonContainer = styled.div`
