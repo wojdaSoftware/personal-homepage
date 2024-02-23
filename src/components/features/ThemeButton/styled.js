@@ -16,7 +16,7 @@ export const StyledThemeButton = styled.button`
   display: inline-block;
   width: 48px;
   height: 26px;
-  border: 1px solid ${({ theme }) => theme.color.iron};
+  border: 1px solid ${({ theme }) => theme.color.slateGray};
   background-color: ${({ theme }) => theme.color.mercury};
   border-radius: 13px;
   padding: 1px 3px;
