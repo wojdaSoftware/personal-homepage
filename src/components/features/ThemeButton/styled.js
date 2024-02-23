@@ -18,7 +18,7 @@ export const StyledThemeButton = styled.button`
 `;
 
 export const ThemeButtonContainer = styled.div`
-  display: none;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
 
