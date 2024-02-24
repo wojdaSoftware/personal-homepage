@@ -1,11 +1,14 @@
-import {StyledListItem, StyledProjectDescription, StyledProjectTitle } from "./styled";
+import { StyledListItem, StyledProjectDescription, StyledProjectTitle } from "./styled";
 
-const ProjectListItem = () => {
+const ProjectListItem = ({ title, description, demoLink, codeLink }) => {
   return (
     <StyledListItem>
-      <StyledProjectTitle>Lorem Ipsum</StyledProjectTitle>
-      <StyledProjectDescription>Lorem Ipsum Dolor Sit Amet</StyledProjectDescription>
-      <StyledProjectDescription>Dolor Sit Amet</StyledProjectDescription>
+      <StyledProjectTitle>{title}</StyledProjectTitle>
+      <StyledProjectDescription>{description}</StyledProjectDescription>
+      <StyledProjectDescription>
+        {`Demo: ${demoLink}`}<br />
+        {`Code: ${codeLink}`}
+      </StyledProjectDescription>
     </StyledListItem>
   );
 };
