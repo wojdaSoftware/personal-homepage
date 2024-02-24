@@ -4,9 +4,9 @@ const SkillsetList = ({ title, skills }) => (
   <StyledArticle>
     <StyledTitle>{title}</StyledTitle>
     <StyledList>
-      {skills && skills.map((skills, index) => (
+      {skills && skills.map((skill, index) => (
         <StyledListItem key={index}>
-          {skills}
+          {skill}
         </StyledListItem>
       ))}
     </StyledList>
