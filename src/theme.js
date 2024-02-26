@@ -11,6 +11,7 @@ export const theme = {
     black: "#252525",
     scienceBlue: "#0366D6",
     scienceBlueTransparent: "rgba(3, 102, 214, 0.2)",
+    dodgerBlue: "#2188FF",
     ironTransparent: "rgba(209, 213, 218, 0.3)",
     iron: "rgba(209, 213, 218, 1)",
     parsley: "rgba(20, 70, 32, 0.2)",
