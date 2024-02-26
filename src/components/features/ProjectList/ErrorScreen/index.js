@@ -16,7 +16,6 @@ const ErrorScreen = ({ darkTheme }) => (
       link={"https://github.com/wojdaSoftware"}
       buttonText={"Got to Github"}
       darkTheme={darkTheme}
-      $noIcon={true}
     />
   </Wrapper>
 );

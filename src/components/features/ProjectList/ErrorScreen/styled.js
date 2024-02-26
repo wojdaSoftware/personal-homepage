@@ -19,5 +19,6 @@ export const StyledDescription = styled.p`
   line-height: 28px;
   font-size: 20px;
   letter-spacing: 1px;
+  margin: 32px 0 0 0;
   color: ${({ theme }) => theme.color.black};
 `;
