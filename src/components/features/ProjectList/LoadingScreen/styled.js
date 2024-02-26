@@ -26,6 +26,7 @@ export const StyledDescription = styled.em`
   `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 36px;
     font-size: 16px;
   }
 `;
