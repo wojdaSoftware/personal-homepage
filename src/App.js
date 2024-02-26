@@ -22,10 +22,12 @@ function App() {
       <SkillsetList
         title={"My skillset includes 🛠️"}
         skills={skills.currentSkills}
+        darkTheme={darkTheme}
       />
       <SkillsetList
         title={"What I want to learn next 🚀"}
         skills={skills.futureSkills}
+        darkTheme={darkTheme}
       />
       <SectionHeader />
       <ProjectList />

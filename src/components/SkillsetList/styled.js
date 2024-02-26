@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledArticle = styled.article`
+  transition-duration: 250ms;
   max-width: 1216px;
   box-shadow: 
     0px 16px 58px 0px ${({ theme }) => theme.color.violet},
@@ -9,6 +10,10 @@ export const StyledArticle = styled.article`
   margin: auto;
   margin-top: 72px;
 
+  ${({ $darkTheme }) => $darkTheme && css`
+    background-color: ${({ theme }) => theme.color.mineshaftTransparent};
+  `}
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
    margin-top: 48px;
    padding: 16px;
@@ -16,11 +21,16 @@ export const StyledArticle = styled.article`
 `;
 
 export const StyledTitle = styled.h2`
+  transition-duration: 400ms;
   font-weight: 900;
   size: 30px;
   margin: 0;
   letter-spacing: 1px;
   color: ${({ theme }) => theme.color.black};
+
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
    font-size: 18px;
@@ -49,13 +59,20 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledListItem = styled.li`
+  transition-duration: 400ms;
   &:before {
     content: "•";
     color: ${({ theme }) => theme.color.scienceBlue};
     padding-right: 16px;
+
+    ${({ $darkTheme }) => $darkTheme && css`
+      color: ${({ theme }) => theme.color.dodgerBlue};
+    `}
   }
 
   color: ${({ theme }) => theme.color.slateGray};
   
-  
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;

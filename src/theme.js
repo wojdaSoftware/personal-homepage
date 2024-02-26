@@ -9,6 +9,7 @@ export const theme = {
     white: "#FFFFFF",
     mercury: "#E5E5E5",
     black: "#252525",
+    mineshaftTransparent: "rgba(54, 54, 54, 0.72)",
     scienceBlue: "#0366D6",
     scienceBlueTransparent: "rgba(3, 102, 214, 0.2)",
     dodgerBlue: "#2188FF",
