@@ -21,7 +21,7 @@ function App() {
         extraHeaderContentTop={<ThemeButton darkTheme={darkTheme} />}
         extraHeaderContentBottom={<LinkButton
           icon={<MailIcon />}
-          link={"kacper.a.wojda@gmail.com"}
+          link={"mailto: kacper.a.wojda@gmail.com"}
           buttonText={"Hire Me"}
           darkTheme={darkTheme}
         />}

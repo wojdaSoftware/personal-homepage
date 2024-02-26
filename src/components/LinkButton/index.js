@@ -3,7 +3,7 @@ import { GridContainer, StyledLinkButtonText, StyledLinkButton } from "./styled"
 
 const LinkButton = ({ link, icon, buttonText, darkTheme }) => (
   <StyledLinkButton
-    href={`mailto: ${link}`}
+    href={link}
     $darkTheme={darkTheme}
   >
     <GridContainer>
