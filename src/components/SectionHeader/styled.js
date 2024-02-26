@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { ReactComponent as GithubIcon } from '../../images/github-portfolio.svg';
 
 export const StyledHeader = styled.header`
   transition-duration: 400ms;
@@ -49,4 +50,13 @@ export const StyledSubtitle = styled.h3`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
    font-size: 17px;
   }
+`;
+
+export const StyledGithubIcon = styled(GithubIcon)`
+  transition-duration: 400ms;
+  fill: ${({ theme }) => theme.color.scienceBlue};
+
+  ${({ $darkTheme }) => $darkTheme && css`
+    fill: ${({ theme }) => theme.color.dodgerBlue};
+  `}
 `;

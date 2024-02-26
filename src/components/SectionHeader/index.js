@@ -1,9 +1,8 @@
-import { ReactComponent as GithubIcon } from '../../images/github-portfolio.svg';
-import { StyledHeader, StyledSubtitle, StyledTitle } from './styled';
+import { StyledGithubIcon, StyledHeader, StyledSubtitle, StyledTitle } from './styled';
 
 const SectionHeader = ({ darkTheme }) => (
   <StyledHeader $darkTheme={darkTheme}>
-    <GithubIcon />
+    <StyledGithubIcon $darkTheme={darkTheme} />
     <StyledTitle $darkTheme={darkTheme}>
       Portfolio
     </StyledTitle>
