@@ -89,6 +89,7 @@ export const StyledParagraph = styled.p`
   margin: 24px 0 0 0;
   color: ${({ theme }) => theme.color.black};
   letter-spacing: 1px;
+  line-height: 25.2px;
 
   ${({ $darkTheme }) => $darkTheme && css`
     color: ${({ theme }) => theme.color.white};
