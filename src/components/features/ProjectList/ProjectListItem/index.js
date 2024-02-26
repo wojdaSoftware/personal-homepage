@@ -1,4 +1,4 @@
-import { StyledListItem, StyledProjectDescription, StyledProjectTitle } from "./styled";
+import { StyledListItem, StyledProjectDescription, StyledProjectLink, StyledProjectTitle, StyledListItemLink } from "./styled";
 
 const ProjectListItem = ({ title, description, demoLink, codeLink }) => {
   return (
@@ -6,8 +6,8 @@ const ProjectListItem = ({ title, description, demoLink, codeLink }) => {
       <StyledProjectTitle>{title}</StyledProjectTitle>
       <StyledProjectDescription>{description}</StyledProjectDescription>
       <StyledProjectDescription>
-        {`Demo: ${demoLink}`}<br />
-        {`Code: ${codeLink}`}
+        {`Demo: `} <StyledProjectLink href={demoLink}>{demoLink}</StyledProjectLink><br />
+        {`Code: `} <StyledProjectLink href={codeLink}>{codeLink}</StyledProjectLink>
       </StyledProjectDescription>
     </StyledListItem>
   );
