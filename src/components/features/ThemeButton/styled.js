@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { ReactComponent as SunIcon } from '../../../images/sun-icon.svg'
 
 export const StyledThemeButtonText = styled.span`
+  transition-duration: 500ms;
   color: ${({ theme }) => theme.color.slateGray};
   font-size: 12px;
   font-weight: 700;
