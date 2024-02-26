@@ -29,7 +29,7 @@ const ProjectList = ({ darkTheme }) => {
       );
     default:
       return (
-        <ErrorScreen />
+        <ErrorScreen darkTheme={darkTheme} />
       );
   }
 }

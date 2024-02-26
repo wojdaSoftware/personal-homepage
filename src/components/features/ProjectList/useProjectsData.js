@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const githubAPI = "https://api.github.com/users/wojdaSoftware/repos";
+const githubAPI = "https://api.github.com/users/wojdaoftware/repos";
 
 const useProjectsData = () => {
   const [projectsData, setProjectData] = useState({ status: "pending", data: null });
