@@ -1,6 +1,6 @@
 # Personal homepage
 
-This page showcases all my recent projects (currently unimplemented) and skills - ones that I've acquired, and ones which I'm exctited to learn.
+This page showcases all my recent projects and skills - ones that I've acquired, and ones which I'm exctited to learn.
 
 Check the site [**here**](https://wojdaSoftware.github.io/personal-homepage/).
 
@@ -18,6 +18,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Javascript
   * ES6+ features
   * create-react-app
+    * React Redux Toolkit
+    * Redux-Saga
+    * React Hooks
+    * Custom Hooks
 
 # React.js
 
