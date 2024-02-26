@@ -1,5 +1,5 @@
 import Wrapper from "../Wrapper";
-import { StyledDescription, StyledLoadingIcon, StyledWrapper } from "./styled";
+import { StyledDescription, StyledLoadingIcon} from "./styled";
 
 const LoadingScreen = ({ darkTheme }) => (
   <Wrapper>
