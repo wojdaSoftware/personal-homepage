@@ -1,3 +1,5 @@
+import ErrorScreen from "./ErrorScreen";
+import LoadingScreen from "./LoadingScreen";
 import ProjectListItem from "./ProjectListItem";
 import { StyledList } from "./styled";
 import useProjectData from "./useProjectsData";
@@ -8,7 +10,7 @@ const ProjectList = ({ darkTheme }) => {
   switch (projectsData.status) {
     case "pending":
       return (
-        <div>Ładowanie</div>
+        <LoadingScreen />
       );
     case "success":
       return (
@@ -25,13 +27,9 @@ const ProjectList = ({ darkTheme }) => {
           ))}
         </StyledList>
       );
-    case "error":
-      return (
-        <div>Wystąpił błąd</div>
-      );
     default:
       return (
-        <div>Wystąpił błąd</div>
+        <ErrorScreen />
       );
   }
 }
