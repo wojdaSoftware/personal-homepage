@@ -10,7 +10,7 @@ const ProjectList = ({ darkTheme }) => {
   switch (projectsData.status) {
     case "pending":
       return (
-        <LoadingScreen />
+        <LoadingScreen darkTheme={darkTheme} />
       );
     case "success":
       return (
