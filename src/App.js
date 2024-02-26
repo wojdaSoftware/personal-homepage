@@ -8,6 +8,8 @@ import useSkills from "./useSkills";
 import Wrapper from "./components/Wrapper/index.js";
 import { useSelector } from "react-redux";
 import { selectTheme } from "./components/features/ThemeButton/themeButtonSlice.js";
+import LinkButton from "./components/LinkButton/index.js";
+import { ReactComponent as MailIcon } from './images/mail-icon.svg';
 
 function App() {
   const skills = useSkills();
@@ -16,7 +18,13 @@ function App() {
   return (
     <Wrapper darkTheme={darkTheme}>
       <Header
-        extraHeaderContent={<ThemeButton darkTheme={darkTheme} />}
+        extraHeaderContentTop={<ThemeButton darkTheme={darkTheme} />}
+        extraHeaderContentBottom={<LinkButton
+          icon={<MailIcon />}
+          link={"kacper.a.wojda@gmail.com"}
+          buttonText={"Hire Me"}
+          darkTheme={darkTheme}
+        />}
         darkTheme={darkTheme}
       />
       <SkillsetList
