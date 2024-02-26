@@ -29,6 +29,7 @@ export const StyledImage = styled.img`
 `;
 
 export const StyledTitle = styled.h1`
+  transition-duration: 400ms;
   font-weight: 900;
   font-size: 38px;
   margin-top: 12px;
@@ -47,6 +48,7 @@ export const StyledTitle = styled.h1`
 `;
 
 export const StyledPreTitle = styled.em`
+  transition-duration: 400ms;
   display: block;
   font-size: 12px;
   font-weight: 700;
@@ -65,6 +67,7 @@ export const StyledPreTitle = styled.em`
 `;
 
 export const StyledDescription = styled.p`
+  transition-duration: 400ms;
   margin-top: 35px;
   margin-bottom: 0;
   line-height: 28px;
