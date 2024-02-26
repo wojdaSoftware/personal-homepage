@@ -29,7 +29,7 @@ function App() {
         skills={skills.futureSkills}
         darkTheme={darkTheme}
       />
-      <SectionHeader />
+      <SectionHeader darkTheme={darkTheme} />
       <ProjectList />
       <Footer />
     </Wrapper>
