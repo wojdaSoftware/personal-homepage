@@ -8,4 +8,9 @@ export const StyledWrapper = styled.div`
   ${({ $darkTheme }) => $darkTheme && css`
     background-color: ${({ theme }) => theme.color.black};
   `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding-top: 34px;
+    padding-bottom: 31px;
+  }
 `;
