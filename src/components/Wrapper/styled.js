@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.color.whiteLilac};
-  padding: 119px 14px 0;
+  padding: 119px 14px 109px;
   transition-duration: 200ms;
 
   ${({ $darkTheme }) => $darkTheme && css`
