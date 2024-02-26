@@ -63,6 +63,7 @@ export const StyledProjectLink = styled.a`
   transition-duration: 200ms;
   color: ${({ theme }) => theme.color.scienceBlue};
   border-bottom: 1px solid ${({ theme }) => theme.color.ironTransparent};
+  word-break: break-all;
 
   ${({ $darkTheme }) => $darkTheme && css`
     color: ${({ theme }) => theme.color.dodgerBlue};

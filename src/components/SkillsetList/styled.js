@@ -27,6 +27,7 @@ export const StyledTitle = styled.h2`
   margin: 0;
   letter-spacing: 2px;
   color: ${({ theme }) => theme.color.black};
+  word-wrap: break-word;
 
   ${({ $darkTheme }) => $darkTheme && css`
     color: ${({ theme }) => theme.color.white};

@@ -10,7 +10,7 @@ export const StyledList = styled.ul`
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
     grid-gap: 16px;
   }
