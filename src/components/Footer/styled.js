@@ -16,9 +16,17 @@ const svgLinkStyle = () => {
     & path {
       transition-duration: 200ms;
       fill: ${({ theme }) => theme.color.black};
+
+      ${({ $darkTheme }) => $darkTheme && css`
+        fill: ${({ theme }) => theme.color.white};
+      `}
     }
     &:hover path {
       fill: ${({ theme }) => theme.color.scienceBlue};
+
+      ${({ $darkTheme }) => $darkTheme && css`
+        fill: ${({ theme }) => theme.color.dodgerBlue};
+      `}
     }
   `;
 }
@@ -33,10 +41,15 @@ export const StyledFooter = styled.footer`
 `;
 
 export const StyledCaption = styled.strong`
+  transition-duration: 400ms;
   display: block;
   font-weight: 700;
   font-size: 12px;
   color: ${({ theme }) => theme.color.slateGray};
+
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const StyledLink = styled.a`
@@ -48,6 +61,10 @@ export const StyledLink = styled.a`
   transition-duration: 250ms;
   letter-spacing: 1px;
   color: ${({ theme }) => theme.color.black};
+  
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 
   &:visited {
     color: ${({ theme }) => theme.color.black};
@@ -55,6 +72,10 @@ export const StyledLink = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.color.scienceBlue};
+
+    ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.dodgerBlue};
+  `}
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -68,6 +89,10 @@ export const StyledParagraph = styled.p`
   margin: 24px 0 0 0;
   color: ${({ theme }) => theme.color.black};
   letter-spacing: 1px;
+
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 14px;

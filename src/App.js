@@ -31,7 +31,7 @@ function App() {
       />
       <SectionHeader darkTheme={darkTheme} />
       <ProjectList />
-      <Footer />
+      <Footer darkTheme={darkTheme} />
     </Wrapper>
   );
 }

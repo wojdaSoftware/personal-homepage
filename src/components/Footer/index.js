@@ -9,25 +9,28 @@ import {
   StyledLinkedInIcon
 } from "./styled";
 
-const Footer = () => (
+const Footer = ({ darkTheme }) => (
   <StyledFooter>
     <StyledContainer>
-      <StyledCaption>
+      <StyledCaption $darkTheme={darkTheme}>
         LET'S TALK!
       </StyledCaption>
-      <StyledLink href="mailto: kacper.a.wojda@gmail.com">
+      <StyledLink
+        href="mailto: kacper.a.wojda@gmail.com"
+        $darkTheme={darkTheme}
+      >
         kacper.a.wojda@gmail.com
       </StyledLink>
-      <StyledParagraph>
+      <StyledParagraph $darkTheme={darkTheme}>
         I'm always open to new projects whenever I have the time.
         If you have a website, dashboard or a mobile app in mind and need help making your ideas come to life, feel free to contact me!
       </StyledParagraph>
       <StyledGridContainer>
         <a href="https://github.com/wojdaSoftware" rel="noopener">
-          <StyledGithubIcon />
+          <StyledGithubIcon $darkTheme={darkTheme} />
         </a>
         <a href="https://www.linkedin.com/in/kacper-wojda-9a7a62299/" rel="noopener">
-          <StyledLinkedInIcon />
+          <StyledLinkedInIcon $darkTheme={darkTheme} />
         </a>
       </StyledGridContainer>
     </StyledContainer>
