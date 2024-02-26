@@ -4,7 +4,6 @@ import useProjectData from "./useProjectsData";
 
 const ProjectList = () => {
   const { projectsData } = useProjectData();
-  console.log(projectsData.data)
 
   return (
     <StyledList>
