@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledHeader = styled.header`
   max-width: 1216px;
@@ -36,6 +36,10 @@ export const StyledTitle = styled.h1`
   letter-spacing: 1px;
   color: ${({ theme }) => theme.color.black};
 
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
    font-size : 22px;
    margin-top: 8px;
@@ -54,6 +58,10 @@ export const StyledPreTitle = styled.em`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
    margin-top : 16px;
   }
+
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 `;
 
 export const StyledDescription = styled.p`
@@ -64,6 +72,10 @@ export const StyledDescription = styled.p`
   font-size: 20px;
   letter-spacing: 1px;
   color: ${({ theme }) => theme.color.slateGray};
+
+  ${({ $darkTheme }) => $darkTheme && css`
+    color: ${({ theme }) => theme.color.white};
+  `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 17px;
@@ -78,6 +90,7 @@ export const GridContainer = styled.div`
 `;
 
 export const HireMeButton = styled.a`
+  transition-duration: 200ms;
   display: inline-block;
   text-decoration: none;
   background-color: ${({ theme }) => theme.color.scienceBlue};
@@ -87,9 +100,17 @@ export const HireMeButton = styled.a`
   margin-top: 32px;
   letter-spacing: 1px;
 
+  ${({ $darkTheme }) => $darkTheme && css`
+    background-color: ${({ theme }) => theme.color.dodgerBlue};
+  `}
+
   &:hover, &:focus {
     box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.color.anakiwa};
     outline: none;
+
+    ${({ $darkTheme }) => $darkTheme && css`
+      box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.color.shipCove};
+    `}
   }
 
   &:active {
