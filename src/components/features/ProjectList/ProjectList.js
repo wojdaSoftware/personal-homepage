@@ -2,7 +2,7 @@ import ProjectListItem from "./ProjectListItem";
 import { StyledList } from "./styled";
 import useProjectData from "./useProjectsData";
 
-const ProjectList = () => {
+const ProjectList = ({ darkTheme }) => {
   const { projectsData } = useProjectData();
 
   return (
@@ -14,6 +14,7 @@ const ProjectList = () => {
           description={project.description}
           demoLink={project.homepage}
           codeLink={project.html_url}
+          darkTheme={darkTheme}
         />
       ))}
     </StyledList>

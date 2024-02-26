@@ -30,7 +30,7 @@ function App() {
         darkTheme={darkTheme}
       />
       <SectionHeader darkTheme={darkTheme} />
-      <ProjectList />
+      <ProjectList darkTheme={darkTheme} />
       <Footer darkTheme={darkTheme} />
     </Wrapper>
   );
