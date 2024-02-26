@@ -12,12 +12,6 @@ const animationRotation = css`
   }
 `
 
-export const StyledWrapper = styled.section`
-  max-width: 1216px;
-  margin: auto;
-  text-align: center;
-`;
-
 export const StyledDescription = styled.em`
   display: block;
   font-size: 20px;
