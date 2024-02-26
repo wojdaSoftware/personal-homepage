@@ -24,7 +24,7 @@ const useProjectsData = () => {
       } catch (error) {
         setProjectData({ status: "error" })
       }
-    }, 3000);
+    }, 3500);
   }, [])
 
   return { projectsData };
