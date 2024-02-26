@@ -6,7 +6,7 @@ const LinkButton = ({ link, icon, buttonText, darkTheme }) => (
     href={link}
     $darkTheme={darkTheme}
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
   >
     <GridContainer icon={icon}>
       {icon}
