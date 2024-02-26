@@ -26,10 +26,10 @@ const Footer = ({ darkTheme }) => (
         If you have a website, dashboard or a mobile app in mind and need help making your ideas come to life, feel free to contact me!
       </StyledParagraph>
       <StyledGridContainer>
-        <a href="https://github.com/wojdaSoftware" rel="noopener">
+        <a href="https://github.com/wojdaSoftware" target="_blank" rel="noopener">
           <StyledGithubIcon $darkTheme={darkTheme} />
         </a>
-        <a href="https://www.linkedin.com/in/kacper-wojda-9a7a62299/" rel="noopener">
+        <a href="https://www.linkedin.com/in/kacper-wojda-9a7a62299/" target="_blank" rel="noopener">
           <StyledLinkedInIcon $darkTheme={darkTheme} />
         </a>
       </StyledGridContainer>

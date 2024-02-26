@@ -5,6 +5,8 @@ const LinkButton = ({ link, icon, buttonText, darkTheme }) => (
   <StyledLinkButton
     href={link}
     $darkTheme={darkTheme}
+    target="_blank"
+    rel="noopener"
   >
     <GridContainer icon={icon}>
       {icon}
