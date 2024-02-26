@@ -59,7 +59,7 @@ export const StyledLink = styled.a`
   font-size: 32px;
   text-decoration: none;
   transition-duration: 250ms;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   color: ${({ theme }) => theme.color.black};
   
   ${({ $darkTheme }) => $darkTheme && css`

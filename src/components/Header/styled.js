@@ -34,7 +34,7 @@ export const StyledTitle = styled.h1`
   font-size: 38px;
   margin-top: 12px;
   flex-basis: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   color: ${({ theme }) => theme.color.black};
 
   ${({ $darkTheme }) => $darkTheme && css`

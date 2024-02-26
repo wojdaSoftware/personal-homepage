@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   max-width: 1216px;
   margin: auto;
   margin-top: 72px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   
   ${({ $darkTheme }) => $darkTheme && css`
     color: ${({ theme }) => theme.color.white};
