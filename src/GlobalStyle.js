@@ -13,9 +13,4 @@ export const GlobalStyle = createGlobalStyle`
   ::before {
     box-sizing: inherit;
   }
-
-  body {
-    background-color: ${({ theme }) => theme.color.whiteLilac};
-    padding: 0 14px;
-  }
 `;

@@ -5,12 +5,13 @@ import SectionHeader from "./components/SectionHeader";
 import SkillsetList from "./components/SkillsetList";
 import ThemeButton from "./components/features/ThemeButton/ThemeButton.js";
 import useSkills from "./useSkills";
+import Wrapper from "./components/Wrapper/index.js";
 
 function App() {
   const skills = useSkills();
 
   return (
-    <>
+    <Wrapper>
       <Header extraHeaderContent={<ThemeButton />} />
       <SkillsetList
         title={"My skillset includes 🛠️"}
@@ -23,7 +24,7 @@ function App() {
       <SectionHeader />
       <ProjectList />
       <Footer />
-    </>
+    </Wrapper>
   );
 }
 
