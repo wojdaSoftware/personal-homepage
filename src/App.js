@@ -6,12 +6,15 @@ import SkillsetList from "./components/SkillsetList";
 import ThemeButton from "./components/features/ThemeButton/ThemeButton.js";
 import useSkills from "./useSkills";
 import Wrapper from "./components/Wrapper/index.js";
+import { useSelector } from "react-redux";
+import { selectTheme } from "./components/features/ThemeButton/themeButtonSlice.js";
 
 function App() {
   const skills = useSkills();
+  const darkTheme = useSelector(selectTheme);
 
   return (
-    <Wrapper>
+    <Wrapper darkTheme={darkTheme}>
       <Header extraHeaderContent={<ThemeButton />} />
       <SkillsetList
         title={"My skillset includes 🛠️"}

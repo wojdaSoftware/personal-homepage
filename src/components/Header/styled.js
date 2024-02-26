@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   max-width: 1216px;
   margin: auto;
-  margin-top: 119px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;

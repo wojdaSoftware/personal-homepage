@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.color.whiteLilac};
-  padding: 0 14px;
+  padding: 119px 14px 0;
 
   ${({ $darkTheme }) => $darkTheme && css`
     background-color: ${({ theme }) => theme.color.black};
