@@ -1,20 +1,22 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { ThemeButtonContainer, StyledThemeButtonText, StyledThemeButton, StyledIconContainer, StyledSunIcon } from "./styled";
-import { selectTheme, toggleTheme } from "./themeButtonSlice";
+import { toggleTheme } from "./themeButtonSlice";
 
 
-const ThemeButton = () => {
+const ThemeButton = ({ darkTheme }) => {
   const dispatch = useDispatch();
-  const darkTheme = useSelector(selectTheme);
 
   return (
     <ThemeButtonContainer>
-      <StyledThemeButtonText>
+      <StyledThemeButtonText $darkTheme={darkTheme}>
         DARK MODE {darkTheme ? "ON" : "OFF"}
       </StyledThemeButtonText>
-      <StyledThemeButton onClick={() => dispatch(toggleTheme())} >
+      <StyledThemeButton
+        onClick={() => dispatch(toggleTheme())}
+        $darkTheme={darkTheme}
+      >
         <StyledIconContainer $darkTheme={darkTheme}>
-          <StyledSunIcon />
+          <StyledSunIcon $darkTheme={darkTheme} />
         </StyledIconContainer>
       </StyledThemeButton>
     </ThemeButtonContainer>

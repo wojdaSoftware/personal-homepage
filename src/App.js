@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Wrapper darkTheme={darkTheme}>
-      <Header extraHeaderContent={<ThemeButton />} />
+      <Header extraHeaderContent={<ThemeButton darkTheme={darkTheme} />} />
       <SkillsetList
         title={"My skillset includes 🛠️"}
         skills={skills.currentSkills}
