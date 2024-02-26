@@ -1,4 +1,13 @@
-import { StyledCaption, StyledContainer, StyledFooter, StyledGridContainer, StyledLink, StyledParagraph, StyledGithubIcon, StyledLinkedInIcon } from "./styled";
+import {
+  StyledCaption,
+  StyledContainer,
+  StyledFooter,
+  StyledGridContainer,
+  StyledLink,
+  StyledParagraph,
+  StyledGithubIcon,
+  StyledLinkedInIcon
+} from "./styled";
 
 const Footer = () => (
   <StyledFooter>
