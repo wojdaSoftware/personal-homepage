@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: ${({ icon }) => icon ? "auto 1fr" : "1fr"};
   grid-column-gap: 16px;
 `;
 

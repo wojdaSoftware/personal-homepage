@@ -6,7 +6,7 @@ const LinkButton = ({ link, icon, buttonText, darkTheme }) => (
     href={link}
     $darkTheme={darkTheme}
   >
-    <GridContainer>
+    <GridContainer icon={icon}>
       {icon}
       <StyledLinkButtonText>{buttonText}</StyledLinkButtonText>
     </GridContainer>
