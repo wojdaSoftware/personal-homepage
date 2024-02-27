@@ -25,7 +25,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Functionality
 
-This is a single page application written in React.js. It fetches public repository info from my account using Github's API and displays a list of my projects with links to demos and code. This is done on a component level using a custom hook that makes use of React's useEffect and useState hooks and async/await syntax. All states of the response are handled with an according component (loading screen, error screen, project list). Project data is only used by one component, so I chose not to use a global state management library (Redux) in this case. I use Redux to manage the app's theme. All components have an alternate theme, so storing theme state globally was my choice, as Redux makes it easier for components to access this data. I also use Redux-Saga to store theme state in LocalStorage, so the app's theme stays the same on refreshes and repeated visits.
+This is a single page application written in React.js. It fetches public repository info from my account using Github's API and displays a list of my projects with links to demos and code. This is done on a component level using a custom hook that makes use of React's useEffect and useState hooks and async/await syntax. All states of the response are handled with an according component (loading screen, error screen, project list). Project data is only used by one component, so I chose not to use a global state management library (Redux) in this case. 
+
+I use Redux to manage the app's theme. All components have an alternate theme, so storing theme state globally was my choice, as Redux makes it easier for components to access this data. 
+
+I also use Redux-Saga to store theme state in LocalStorage, so the app's theme stays the same on refreshes and repeated visits.
 
 # React.js
 
