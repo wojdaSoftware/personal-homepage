@@ -4,6 +4,8 @@ This page showcases all my recent projects and skills - ones that I've acquired,
 
 Check the site [**here**](https://wojdaSoftware.github.io/personal-homepage/).
 
+![personal-homepage-demo](https://github.com/wojdaSoftware/personal-homepage/assets/141030238/5f3b7346-a6c5-4b1e-80ec-487a6a6e35f3)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Technologies
@@ -24,6 +26,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     * Custom Hooks
 
 ## Functionality
+
+![personal-homepage-loading-demo](https://github.com/wojdaSoftware/personal-homepage/assets/141030238/f57d2533-3e33-4fd8-b61e-a95d68474f0d)
 
 This is a single page application written in React.js. It fetches public repository info from my account using Github's API and displays a list of my projects with links to demos and code. This is done on a component level using a custom hook that makes use of React's useEffect and useState hooks and async/await syntax. All states of the response are handled with an according component (loading screen, error screen, project list). Project data is only used by one component, so I chose not to use a global state management library (Redux) in this case. 
 
